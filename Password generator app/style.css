@@ -1,0 +1,195 @@
+/* import google font  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/* general settings  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bkg-color:#24232A;
+    --green-color:#A5FFAF;
+}
+
+::selection{
+    background-color: var(--green-color);
+    color:var(--bkg-color);
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Righteous', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111116;
+    position: relative;
+}
+
+section.container{
+    background-color: #111116;
+    max-width: 500px;
+    width: 100%;
+}
+
+.container h2{
+    color:#ccc;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+.container .input-field{
+    height: 60px;
+    background-color: var(--bkg-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding:20px;
+}
+
+.input-field input{
+    width: 100%;
+    padding:5px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    caret-color: var(--green-color);
+    font-size: 1.5rem;
+    color:#fff;
+    letter-spacing: 1.5px;
+}
+
+.input-field i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color:var(--green-color);
+    cursor: pointer;
+}
+
+.container .set-passwd{
+    background-color: var(--bkg-color);
+    margin-top:30px;
+    padding: 20px;
+}
+
+.container .set-passwd .passwd-length{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.passwd-length .passwd-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.passwd-details span{
+    color:#eee;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+
+.passwd-details span.length{
+    color: var(--green-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.passwd-length .passwd-range{
+    width: 100%;
+}
+
+
+.passwd-length .passwd-range input{
+    width: 100%;
+    background-color: var(--bkg-color);
+    accent-color: var(--green-color);
+}
+
+.set-passwd .passwd-settings{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.passwd-settings .settings-ul{
+    list-style: none;
+    width: 100%;
+}
+
+.settings-ul .option{
+    margin-bottom: 15px;
+}
+
+.option label{
+    color:rgba(238, 238, 238, 0.651);
+    text-transform: capitalize;
+    padding-left: 10px;
+    cursor: pointer;
+    font-size:1.2rem;
+    word-spacing: 1.5px;
+}
+
+.option input{
+    accent-color: var(--green-color);
+    border-radius: 0;
+    outline: none;
+    border-color: var(--bkg-color);
+    cursor: pointer;
+}
+
+.passwd-settings .passwd-strength{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    background-color: #111116;
+    padding: 20px;
+}
+
+.passwd-strength span{
+    color: #ccc;
+}
+
+.passwd-strength .strn-level{
+    color: #eee;
+}
+
+.show-stren{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.show-stren span:not(:first-child){
+    width: 10px;
+    height: 25px;
+    border: 1px solid #ECC674;
+    display: inline-block;
+}
+
+button.gen-action{
+    width: 100%;
+    background-color: var(--green-color);
+    padding: 10px;
+    margin-top: 30px;
+    color: #111116;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
