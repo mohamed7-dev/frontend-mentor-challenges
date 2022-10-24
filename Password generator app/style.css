@@ -11,6 +11,7 @@
 :root{
     --bkg-color:#24232A;
     --green-color:#A5FFAF;
+    --body-color:#111116;
 }
 
 ::selection{
@@ -24,7 +25,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #111116;
+    background-color: var(--body-color);
     position: relative;
 }
 
@@ -110,8 +111,36 @@ section.container{
 
 .passwd-length .passwd-range input{
     width: 100%;
+    background-color:var(--body-color);
+    appearance: none;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.passwd-range input::-webkit-slider-thumb{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid var(--body-color);
     background-color: var(--bkg-color);
-    accent-color: var(--green-color);
+    box-shadow: -230px 0 0 220px var(--green-color);
+}
+
+.passwd-range input::-moz-range-track{
+    appearance: none;
+    background-color:var(--body-color);
+}
+
+.passwd-range input::-moz-range-thumb{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid var(--body-color);
+    background-color: var(--bkg-color);
+    box-shadow: -230px 0 0 220px var(--green-color);
 }
 
 .set-passwd .passwd-settings{
